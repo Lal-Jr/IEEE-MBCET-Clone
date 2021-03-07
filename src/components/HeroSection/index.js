@@ -1,40 +1,30 @@
-import React, {useState } from 'react';
-import { HeroSectionContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroSection.styles';
-import Video from '../../videos/gif.gif';
-import { Button } from '../Button.styles';
+import React, { useState } from 'react';
+import './HeroSection.css';
+import { Button } from '../Button/Button.styles';
 
-const HeroSection = () => {
+function HeroSection ({ lightBg, topLine, lightText, lightTextDesc, headline, description, buttonLabel, img, alt, imgStart })
+{
     const [hover, setHover] = useState(false)
 
     const onHover = () => {
         setHover(!hover);
     }
-    
     return (
-        <HeroSectionContainer id="home">
-            <HeroBg>
-                <VideoBg autoplay loop muted src={Video} type='video/mp4' />
-            </HeroBg>
-            <HeroContent>
-                <HeroH1>
-                    Redefining your
-                </HeroH1>
-                <HeroH1>
-                     career ahead!
-                </HeroH1>
-                <HeroBtnWrapper>
-                    <Button to='events' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                        Upcoming Events {hover ? <ArrowRight /> : <ArrowForward />}
-                    </Button>
-                </HeroBtnWrapper>
-                <HeroBtnWrapper>
-                    <Button to='more' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                        Sneak Peak {hover ? <ArrowRight /> : <ArrowForward />}
-                    </Button>
-                </HeroBtnWrapper>
-            </HeroContent>
-        </HeroSectionContainer>
-    )
+        <>
+            <div className={lightBg ? 'home__hero-section' : 'home__hero - section darkBg'}>
+                <div className="container">
+                    <div className="row home__hero-row"
+                        style={{display:'flex', flexdirection: imgStart === 'start' ? 'row-reverse' : 'row'}}
+                    >
+                        <div className="col">
+                            <div className="home__hero-text-wrapper">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
-
 export default HeroSection;
