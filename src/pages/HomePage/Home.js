@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
-import HeroSection from '../components/HeroSection';
+import Navbar from '../../components/Navbar';
+import Sidebar from '../../components/Sidebar';
+import HeroSection from '../../components/HeroSection';
 import { homeObjOne } from './Data';
 
 const Home = () => {
