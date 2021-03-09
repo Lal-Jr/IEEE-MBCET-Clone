@@ -2,6 +2,7 @@ import React from 'react';
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button/Button.styles';
+// import CountUp from 'react-countup';
 
 function HeroSection({ lightBg, lighText, headLine, buttonLabel_1, buttonLabel_2, img, alt, imgStart })
 {
@@ -19,8 +20,10 @@ function HeroSection({ lightBg, lighText, headLine, buttonLabel_1, buttonLabel_2
                     >
                         <div className="col">
                             <div className="home__hero-text-wrapper">
-                                {/* <div className="top-line">{topLine}</div> */}
                                 <h1 className={lighText ? 'heading' : 'heading dark'}>{headLine}</h1>
+                                {/* <div>
+                                    <CountUp end={200} />
+                                </div> */}
                                 {/* <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>
                                     {description}
                                 </p> */}
@@ -29,6 +32,7 @@ function HeroSection({ lightBg, lighText, headLine, buttonLabel_1, buttonLabel_2
                                         {buttonLabel_1}
                                     </Button>
                                 </Link>
+                                <div class="divider" />
                                 <Link to="/sneakpeak">
                                     <Button>
                                         {buttonLabel_2}

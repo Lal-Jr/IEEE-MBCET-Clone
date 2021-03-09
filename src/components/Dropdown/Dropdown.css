@@ -1,0 +1,39 @@
+.dropdown-menu {
+  box-shadow: 2px 2px 15px #1d2020;
+  background: red;
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menu li {
+  background: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #f2f2f2;
+  color: #0066ff;
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #010606;
+  padding: 16px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+  .FaCaretDown {
+    display: none;
+  }
+}

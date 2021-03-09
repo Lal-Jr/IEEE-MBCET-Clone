@@ -35,34 +35,29 @@ function Footer() {
             <div className='footer-links'>
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'>How it works</Link>
-                        <Link to='/'>Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Service</Link>
+                        <h2>Useful Link</h2>
+                        <Link to=''>Home</Link>
+                        <Link to='/'>About Us</Link>
+                        <Link to='/'>Events</Link>
+                        <Link to='/'>Gallery</Link>
+                        <Link to='/'>Team</Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>Contact Us</h2>
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Support</Link>
-                        <Link to='/'>Destinations</Link>
-                        <Link to='/'>Sponsorships</Link>
+                        <Link>MBCET</Link>
+                        <Link>Nalanchira PO, 695015</Link>
+                        <Link>Trivandrum, Kerala, India</Link>
+                        <Link>Phone: +91 8086010528 (Chair Person</Link>
+                        <Link>Email: ieeesb@mbcet.ac.in</Link>
                     </div>
                 </div>
                 <div className='footer-link-wrapper'>
-                    <div className='footer-link-items'>
-                        <h2>Videos</h2>
-                        <Link to='/'>Submit Video</Link>
-                        <Link to='/'>Ambassadors</Link>
-                        <Link to='/'>Agency</Link>
-                        <Link to='/'>Influencer</Link>
-                    </div>
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>
                         <Link to='/'>Instagram</Link>
                         <Link to='/'>Facebook</Link>
                         <Link to='/'>Youtube</Link>
+                        <Link to='/'>LinkedIn</Link>
                         <Link to='/'>Twitter</Link>
                     </div>
                 </div>
@@ -94,9 +89,7 @@ function Footer() {
                         </Link>
                         <Link
                             className='social-icon-link'
-                            to={
-                                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-                            }
+                            to='/'
                             target='_blank'
                             aria-label='Youtube'
                         >

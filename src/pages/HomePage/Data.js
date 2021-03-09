@@ -5,6 +5,6 @@ export const homeObjOne = {
     buttonLabel_1: 'Upcoming Events',
     buttonLabel_2: 'Sneak Peak',
     imgStart: '',
-    img: 'images/hero_intro.png',
+    img: 'assests/hero_intro.png',
     alt: 'hero-img',
 };
