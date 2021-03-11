@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../Button/Button.styles';
 // import CountUp from 'react-countup';
 
-function HeroSection({ lightBg, lighText, headLine, buttonLabel_1, buttonLabel_2, img, alt, imgStart })
+function HeroSection({ lightBg, lighText, headLine, description, buttonLabel_1, buttonLabel_2, img, alt, imgStart })
 {
     // const [hover, setHover] = useState(false)
 
@@ -24,9 +24,9 @@ function HeroSection({ lightBg, lighText, headLine, buttonLabel_1, buttonLabel_2
                                 {/* <div>
                                     <CountUp end={200} />
                                 </div> */}
-                                {/* <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>
+                                <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>
                                     {description}
-                                </p> */}
+                                </p>
                                 <Link to="/inner-events">
                                     <Button>
                                         {buttonLabel_1}
