@@ -7,11 +7,11 @@ export const Button = styled(Link)`
     background: ${({ primary }) => (primary ? '#000' : 'transparent')} ;
     white-space: nowrap;
     padding: ${({ big }) => ( big ? '14px 48px' : '12px 30px')};
-    color: ${({ dark }) => (dark ? '#000' : '#fff')};
+    color: ${({ dark }) => (dark ? '#fff' : '#000')};
     font-size: ${({ fontBig }) => ( fontBig ? '20px' : '16px')};
     outline: none;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid #000;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
@@ -22,7 +22,7 @@ export const Button = styled(Link)`
         transition: all 0.2s ease-in-out;
         background: ${({ primary }) => (primary ? '#000' : '#3385ff')};
         color: ${({ dark }) => (dark ? '#000' : '#fff')};
-        border: 5px solid #3385ff;
+        border: 2px solid #3385ff;
         
     }
 `;

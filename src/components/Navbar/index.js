@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FaBars, FaCaretDown } from 'react-icons/fa';
-import { Hamburger } from './Navbar.styles.js';
+// import { Hamburger } from './Navbar.styles'
 // import { Link as LinkS } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from '../Dropdown/index';
+import image from '../../images/ieeeheader.png';
 
 function Navbar({ toggle }) {
     const [click, setClick] = useState(false);
@@ -31,19 +32,13 @@ function Navbar({ toggle }) {
 
     return (
         <>
-        <nav className='navbar'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    <img src={0} alt="Logo" class="img-fluid"/>
+            <nav className={click ? 'navbar active' : 'navbar'}>
+            <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
+                    <img src={image} alt="Logo" class="img-fluid"/>
             </Link>
-            <Hamburger onClick={toggle}>
-                <FaBars />
-            </Hamburger>
-            <div className='menu-icon' onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-            </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
                 Home
             </Link>
             </li>
@@ -91,13 +86,18 @@ function Navbar({ toggle }) {
             </li>
             <li className='nav-item'>
             <Link
-                to='/events'
+                to='/contactus'
                 className='nav-links'
                 onClick={closeMobileMenu}
             >
                 Contact Us
             </Link>
             </li>
+            </ul>
+            <ul>
+            <div className='Hamburger' onClick={ toggle }>
+                <FaBars />
+            </div>
             </ul>
         </nav>
         </>

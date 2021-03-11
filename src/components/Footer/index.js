@@ -1,14 +1,15 @@
 import React from 'react';
 import './Footer.css';
 // import { Button } from '../Button/Button.styles';
-import { Link } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import {
     FaFacebook,
     FaInstagram,
-    FaYoutube,
     FaTwitter,
     FaLinkedin
 } from 'react-icons/fa';
+import logo from "../../images/mbcet.png"
 
 function Footer() {
     return (
@@ -36,81 +37,60 @@ function Footer() {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>Useful Link</h2>
-                        <Link to=''>Home</Link>
-                        <Link to='/'>About Us</Link>
-                        <Link to='/'>Events</Link>
-                        <Link to='/'>Gallery</Link>
-                        <Link to='/'>Team</Link>
+                        <LinkR to='/'>Home</LinkR>
+                        <LinkS to='/'>About Us</LinkS>
+                        <LinkS to='/'>Events</LinkS>
+                        <LinkS to='/'>Gallery</LinkS>
+                        <LinkS to='/'>Team</LinkS>
                     </div>
-                    <div className='footer-link-items'>
+                    <div className='contact'>
                         <h2>Contact Us</h2>
-                        <Link>MBCET</Link>
-                        <Link>Nalanchira PO, 695015</Link>
-                        <Link>Trivandrum, Kerala, India</Link>
-                        <Link>Phone: +91 8086010528 (Chair Person</Link>
-                        <Link>Email: ieeesb@mbcet.ac.in</Link>
-                    </div>
-                </div>
-                <div className='footer-link-wrapper'>
-                    <div className='footer-link-items'>
-                        <h2>Social Media</h2>
-                        <Link to='/'>Instagram</Link>
-                        <Link to='/'>Facebook</Link>
-                        <Link to='/'>Youtube</Link>
-                        <Link to='/'>LinkedIn</Link>
-                        <Link to='/'>Twitter</Link>
+                        <p>MBCET</p>
+                        <p>Nalanchira PO, 695015</p>
+                        <p>Trivandrum, Kerala, India</p>
+                        <p>Phone: +91 8086010528 (Chair Person)</p>
+                        <p>Email: ieeesb@mbcet.ac.in</p>
                     </div>
                 </div>
             </div>
             <section className='social-media'>
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
-                        <Link to='/' className='social-logo'>
-              IEEE MBCET
-            </Link>
+                        <LinkR to='/' className='social-logo'>
+                            <img src={logo} alt="Logo" />
+                        </LinkR>
                     </div>
-                    <small className='website-rights'>IEEE MBCET</small>
+                    <small className='website-rights'>MBCET©2021</small>
                     <div className='social-icons'>
-                        <Link
-                            className='social-icon-link'
+                        <LinkR
+                            className='social-icon-link1'
                             to='/'
                             target='_blank'
                             aria-label='Facebook'
                         >
                             <FaFacebook />
-                        </Link>
-                        <Link
-                            className='social-icon-link'
+                        </LinkR>
+                        <LinkR
+                            className='social-icon-link2'
                             to='/'
-                            target='_blank'
                             aria-label='Instagram'
                         >
                             <FaInstagram />
-                        </Link>
-                        <Link
-                            className='social-icon-link'
+                        </LinkR>
+                        <LinkR
+                            className='social-icon-link3'
                             to='/'
-                            target='_blank'
-                            aria-label='Youtube'
-                        >
-                            <FaYoutube />
-                        </Link>
-                        <Link
-                            className='social-icon-link'
-                            to='/'
-                            target='_blank'
                             aria-label='Twitter'
                         >
                             <FaTwitter />
-                        </Link>
-                        <Link
-                            className='social-icon-link'
+                        </LinkR>
+                        <LinkR
+                            className='social-icon-link4'
                             to='/'
-                            target='_blank'
                             aria-label='LinkedIn'
                         >
                             <FaLinkedin />
-                        </Link>
+                        </LinkR>
                     </div>
                 </div>
             </section>

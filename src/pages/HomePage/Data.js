@@ -1,6 +1,6 @@
 export const homeObjOne = {
-    lightBg: false,
-    lightText: true,
+    lightBg: true,
+    lightText: false,
     headLine: 'Redefining your career ahead!',
     buttonLabel_1: 'Upcoming Events',
     buttonLabel_2: 'Sneak Peak',
