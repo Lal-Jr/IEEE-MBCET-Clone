@@ -11,7 +11,6 @@ function Navbar({ toggle }) {
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
-    const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
     const onMouseEnter = () => {
@@ -32,8 +31,8 @@ function Navbar({ toggle }) {
 
     return (
         <>
-            <nav className={click ? 'navbar active' : 'navbar'}>
-            <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
+            <nav className={click ? 'navbar active' : 'navbar'} >
+            <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
                     <img src={image} alt="Logo" class="img-fluid"/>
             </Link>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>

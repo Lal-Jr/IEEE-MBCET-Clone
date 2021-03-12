@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../Button/Button.styles';
 // import CountUp from 'react-countup';
 
-function HeroSection({ lightBg, lighText, headLine, description, buttonLabel_1, buttonLabel_2, img, alt, imgStart })
+function HeroSection({ lightBg, lightText, lightTextDesc, headLine, description, buttonLabel_1, buttonLabel_2, img, alt, imgStart })
 {
     // const [hover, setHover] = useState(false)
 
@@ -20,20 +20,20 @@ function HeroSection({ lightBg, lighText, headLine, description, buttonLabel_1, 
                     >
                         <div className="col">
                             <div className="home__hero-text-wrapper">
-                                <h1 className={lighText ? 'heading' : 'heading dark'}>{headLine}</h1>
+                                <h1 className={lightText ? 'heading' : 'heading dark'}>{headLine}</h1>
                                 {/* <div>
                                     <CountUp end={200} />
                                 </div> */}
                                 <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>
                                     {description}
                                 </p>
-                                <Link to="/inner-events">
+                                <Link style={{ textDecoration: 'none' }} to="/inner-events">
                                     <Button>
                                         {buttonLabel_1}
                                     </Button>
                                 </Link>
                                 <div class="divider" />
-                                <Link to="/sneakpeak">
+                                <Link style={{ textDecoration: 'none' }} to="/sneakpeak">
                                     <Button>
                                         {buttonLabel_2}
                                     </Button>
