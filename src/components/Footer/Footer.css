@@ -59,7 +59,7 @@
   align-items: center;
   text-align: center;
   width: 70vw;
-  justify-content: end;
+  justify-content: center;
   margin-right: 2rem;
 }
 
@@ -177,6 +177,7 @@
     grid-template-columns: repeat(2, auto);
     grid-gap: 7.5px;
     padding-top: 2rem;
+    align-items: center;
   }
 
   .footer-input {
@@ -194,4 +195,8 @@
   .social-media-wrap {
     flex-direction: column;
   }
+
+  .social-icon-link1,.social-icon-link2,.social-icon-link3,.social-icon-link4 {
+  padding-top: 5px;
+}
 }

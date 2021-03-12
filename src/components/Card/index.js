@@ -15,11 +15,6 @@ function Card({title,img,body}) {
                     <p>{body}</p>
                 </div>
             </div>
-            {/* <div className='btn'>
-                <button>
-                    <a>View More</a>
-                </button>
-            </div> */}
         </div>
     )
 }
