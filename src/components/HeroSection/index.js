@@ -6,11 +6,6 @@ import { Button } from '../Button/Button.styles';
 
 function HeroSection({ lightBg, lightText, lightTextDesc, headLine, description, buttonLabel_1, buttonLabel_2, img, alt, imgStart })
 {
-    // const [hover, setHover] = useState(false)
-
-    // const onHover = () => {
-    //     setHover(!hover);
-    // }
     return (
         <>
             <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}>
