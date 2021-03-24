@@ -1,5 +1,7 @@
 import React from 'react';
-import {} from './VMSection.styles.jsx';
+import { VMContainer, Title, SubTitle, CardContainer, ImageContainer, CardContent, CardTitle, CardBody, Divider, VMRow} from './VMSection.styles.jsx';
+import Vimg from '../../images/Vimg.png';
+import Mimg from '../../images/Mimg.png';
 
 function VMSection() {
     return (
@@ -9,8 +11,27 @@ function VMSection() {
                 <SubTitle>There is always a driving factor behind each community initative. 
                           IEEE MBCET is proud to have that driving factor, which helps everyone in their pursuit!
                 </SubTitle>
-                    <CardContainer></CardContainer>
-                    <CardContainer></CardContainer>
+                <VMRow>
+                <CardContainer>
+                    <ImageContainer>
+                        <img src={Vimg} alt='' />
+                    </ImageContainer>
+                    <CardContent>
+                        <CardTitle>VISION</CardTitle>
+                        <CardBody>To be a community supporting each and every individual throughout their pursuit and drive them to success</CardBody>
+                    </CardContent>
+                </CardContainer>
+                <Divider />
+                <CardContainer>
+                    <ImageContainer>
+                        <img src={Mimg} alt='' />
+                    </ImageContainer>
+                    <CardContent>
+                        <CardTitle>MISSION</CardTitle>
+                        <CardBody>To transform the Youth as technically competent, ethically sound and socially committed professionals, for the welfare of humanity</CardBody>
+                    </CardContent>
+                </CardContainer>
+                </VMRow>
             </VMContainer>
         </>
     )

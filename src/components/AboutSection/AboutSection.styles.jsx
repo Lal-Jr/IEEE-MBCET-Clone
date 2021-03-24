@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
     padding: 0px 0px 50px 0px;
+    box-shadow: 15px 0px 30px 0.5px rgba(127, 137, 161, 0.25);
+    clip-path: inset(0px 0px -15px 0px);
 `
 export const AboutRow = styled.div`
     display: flex;
