@@ -56,9 +56,9 @@ function Footer() {
             <section className='social-media'>
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
-                        <LinkR to='/' className='social-logo'>
+                        <a href='https://mbcet.ac.in/' className='social-logo'>
                             <img src={logo} alt="Logo" />
-                        </LinkR>
+                        </a>
                     </div>
                     <small className='website-rights'>MBCET©2021</small>
                     <div className='social-icons'>

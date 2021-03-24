@@ -7,7 +7,7 @@ import Dropdown from '../Dropdown/index';
 import image from '../../images/ieeeheader.png';
 
 function Navbar({ toggle }) {
-    const [click, setClick] = useState(false);
+    const [, setClick] = useState(false);
 
     const [dropdown, setDropdown] = useState(false);
 
