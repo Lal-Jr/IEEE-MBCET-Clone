@@ -21,7 +21,7 @@ export const MenuItems = [
     },
     {
         title: 'Wall of Web',
-        path: '/wallofweb',
+        path: '/WoW',
         cName: 'dropdown-link'
     }
 

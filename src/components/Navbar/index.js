@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaCaretDown } from 'react-icons/fa';
-// import { Hamburger } from './Navbar.styles'
+import { animateScroll as scroll } from 'react-scroll';
 // import { Link as LinkS } from 'react-scroll';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { NavItem, NavLinks, NavLogo, NavMenu, NavBar, Hamburger } from './Navbar.styles.jsx';
 import Dropdown from '../Dropdown/index';
 import image from '../../images/ieeeheader.png';
 
 function Navbar({ toggle }) {
     const [click, setClick] = useState(false);
+
     const [dropdown, setDropdown] = useState(false);
 
     const closeMobileMenu = () => setClick(false);
 
+    const [scrollNav, setScrollNav] = useState(false);
+
     const onMouseEnter = () => {
-        if (window.innerWidth < 960) {
+        if (window.innerWidth < 900) {
             setDropdown(false);
         } else {
             setDropdown(true);
@@ -22,83 +24,92 @@ function Navbar({ toggle }) {
     };
 
     const onMouseLeave = () => {
-        if (window.innerWidth < 960) {
+        if (window.innerWidth < 900) {
             setDropdown(false);
         } else {
             setDropdown(false);
         }
     };
 
+    const changeNav = () => {
+        if (window.scrollY >= 80){
+            setScrollNav(true);
+        }
+        else {
+            setScrollNav(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <>
-            <nav className={click ? 'navbar active' : 'navbar'} >
-            <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
-                    <img src={image} alt="Logo" class="img-fluid"/>
-            </Link>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-            <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
-                Home
-            </Link>
-            </li>
-            <li className='nav-item'>
-            <Link
-                to='/aboutus'
-                className='nav-links'
-                onClick={closeMobileMenu}
-            >
-                About Us
-            </Link>
-            </li>
-            <li className='nav-item'>
-            <Link
-                to='/team'
-                className='nav-links'
-                onClick={closeMobileMenu}
-            >
-                Team
-            </Link>
-            </li>
-            <li className='nav-item'>
-            <Link
-                to='/events'
-                className='nav-links'
-                onClick={closeMobileMenu}
-            >
-                Events
-            </Link>
-            </li>
-            <li
-                className='nav-item'
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-            >
-            <Link
-                to='/'
-                className='nav-links'
-                onClick={closeMobileMenu}
-            >
-                            More         
-                <FaCaretDown/>
-            </Link>
-                {dropdown && <Dropdown />}
-            </li>
-            <li className='nav-item'>
-            <Link
-                to='/contactus'
-                className='nav-links'
-                onClick={closeMobileMenu}
-            >
-                Contact Us
-            </Link>
-            </li>
-            </ul>
-            <ul>
-            <div className='Hamburger' onClick={ toggle }>
-                <FaBars />
-            </div>
-            </ul>
-        </nav>
+            <NavBar scrollNav={scrollNav}>
+                <NavLogo onClick={toggleHome}>
+                    <img src={image} alt="Logo" />
+                </NavLogo>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks to='/' onClick={toggleHome}>
+                            Home
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks
+                            to='/aboutus'
+                            onClick={closeMobileMenu}
+                        >
+                            About Us
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks
+                            to='/team'
+                            onClick={closeMobileMenu}
+                        >
+                            Team
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks
+                            to='/events'
+                            onClick={closeMobileMenu}
+                        >
+                            Events
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                    >
+                        <NavLinks
+                            to='/'
+                            onClick={closeMobileMenu}
+                        >
+                            More
+                            <FaCaretDown />
+                        </NavLinks>
+                        {dropdown && <Dropdown />}
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks
+                            to='/contactus'
+                            onClick={closeMobileMenu}
+                        >
+                            Contact Us
+                        </NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <Hamburger onClick={toggle}>
+                    <FaBars />
+                </Hamburger>
+            </NavBar>
         </>
     );
 }

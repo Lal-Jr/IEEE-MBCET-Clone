@@ -3,8 +3,7 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import AboutSection from '../../components/AboutSection';
-import { homeObjOne } from './Data';
-import { cardObjOne } from './cardData'
+import { cardObjOne } from '../../components/Card/cardData.js';
 import Card from '../../components/Card';
 import Footer from '../../components/Footer';
 
@@ -19,7 +18,7 @@ const Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <HeroSection {...homeObjOne} />
+            <HeroSection/>
             <AboutSection />
             {/* <Card {...cardObjOne} /> */}
             <Footer />

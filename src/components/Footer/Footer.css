@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* .footer-subscription {
@@ -61,6 +61,7 @@
   text-align: center;
   width: 70vw;
   justify-content: center;
+  margin-right: 2rem;
 }
 
 .footer-link-items {
