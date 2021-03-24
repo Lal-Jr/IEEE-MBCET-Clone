@@ -1,6 +1,10 @@
 import styled from 'styled-components';
+import background from '../../images/intro-bg.png';
 
 export const HeroContainer = styled.div`
+    background-image: url(${background});
+    background-repeat: no-repeat;
+    background-size: 1900px 650px;
     color: #fff;
     padding: 160px;
 `
@@ -20,7 +24,7 @@ export const HeroTextWrapper = styled.div`
 `
 
 export const Title = styled.h1`
-    color: #1c2237;
+    color: #fff;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600px;

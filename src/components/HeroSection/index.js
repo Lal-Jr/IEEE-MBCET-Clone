@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeroContainer, HeroRow, HeroTextWrapper, Title, ButtonWrapper, Divider, HeroImageWrapper } from './HeroSection.styles.jsx';
 import { Button } from '../Button/Button.styles.jsx';
-import image from '../../images/hero_intro.png'
+import image from '../../images/hero_intro.png';
 
 function HeroSection()
 {
