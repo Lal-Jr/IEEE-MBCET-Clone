@@ -20,7 +20,9 @@ export const SubTitle = styled.p`
 `
 
 export const CardContainer = styled.div`
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 600px;
     animation: ease-in-out;
     padding: 40px;
@@ -38,8 +40,9 @@ export const CardContainer = styled.div`
 `
 export const ImageContainer = styled.div`
     overflow:  hidden;
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
 `
 
 export const CardContent = styled.div`
