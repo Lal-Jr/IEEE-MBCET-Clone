@@ -64,6 +64,6 @@ export const VMRow = styled.div`
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
 `
