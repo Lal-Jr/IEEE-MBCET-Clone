@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import AboutSection from '../../components/AboutSection';
 import VMSection from '../../components/VMSection';
+import JoinSection from '../../components/JoinSection';
 import Footer from '../../components/Footer';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <HeroSection/>
             <AboutSection />
             <VMSection />
+            <JoinSection />
             <Footer />
         </>
     )
