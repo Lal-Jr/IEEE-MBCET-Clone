@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const JoinContainer = styled.div`
     background: #004a99;
+    padding-bottom: 40px;
 `
 
 export const Title = styled.h1`

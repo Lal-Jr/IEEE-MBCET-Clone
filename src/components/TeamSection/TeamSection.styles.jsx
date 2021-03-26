@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const TeamContainer = styled.div`
     box-shadow: 15px 0px 30px 0.5px rgba(127, 137, 161, 0.25);
     clip-path: inset(0px 0px -15px 0px);
+    padding-bottom: 40px;
 `
 
 export const Title = styled.h1`
@@ -40,7 +41,7 @@ export const Overlay = styled.div`
     left: 0;
     right: 0;
     opacity: 0;
-    transition: .5s ease;
+    transition: .4s ease;
     background-color: #004a99;
 `
 

@@ -7,7 +7,9 @@ import VMSection from '../../components/VMSection';
 import JoinSection from '../../components/JoinSection';
 import TeamSection from '../../components/TeamSection';
 import SocietySection from '../../components/SocietySection';
+import BlogSection from '../../components/BlogSection';
 import Footer from '../../components/Footer';
+import ContactSection from '../../components/ContactSection';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -26,6 +28,8 @@ const Home = () => {
             <JoinSection />
             <TeamSection />
             <SocietySection />
+            <BlogSection />
+            <ContactSection />
             <Footer />
         </>
     )

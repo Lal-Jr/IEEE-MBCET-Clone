@@ -23,6 +23,11 @@ export const MenuItems = [
         title: 'Wall of Web',
         path: '/WoW',
         cName: 'dropdown-link'
+    },
+    {
+        title: 'Blog',
+        path: '/blog',
+        cName: 'dropdown-link'
     }
 
 ];

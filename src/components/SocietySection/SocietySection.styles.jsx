@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SocietyContainer = styled.div`
     background: #ecf5ff;
+    padding-bottom: 40px;
 `
 
 export const Title = styled.h1`
@@ -34,6 +35,17 @@ export const MiniCard = styled.div`
     flex-direction: column;
 `
 
+export const ImageContainer = styled.div`
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    align-items: baseline;
+    display: block;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+`
+
 export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -49,20 +61,13 @@ export const CardContainer = styled.div`
     background: #fff;
     box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
     transition: all 0.4s ease-in-out;
+    cursor: pointer;
 
-    &:hover{
-        transfrom: scale(1.1);
+    &:hover ${ImageContainer}{
+        transform: scale(1.2);
     }
 `
 
-export const ImageContainer = styled.div`
-    justify-content: center;
-    display: block;
-    align-items: center;
 
-    &:hover{
-        transfrom: scale(1.1);
-    }
-`
 
 
