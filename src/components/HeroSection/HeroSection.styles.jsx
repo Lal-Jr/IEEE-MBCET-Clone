@@ -30,6 +30,7 @@ export const Title = styled.h1`
     font-weight: 600px;
     letter-spacing: 2px;
     padding: 5px 20px 5px 20px;
+    align-items: flex-start;
 `
 
 export const ButtonWrapper = styled.div`

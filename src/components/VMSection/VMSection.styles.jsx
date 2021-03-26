@@ -15,14 +15,14 @@ export const SubTitle = styled.p`
     padding: 0px 75px 10px 75px;
     line-height: 1.6;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
 `
 
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 600px;
     animation: ease-in-out;
     padding: 40px;
@@ -66,7 +66,7 @@ export const VMRow = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: space-between;
+    align-items: space-between;
     padding-top: 25px;
     padding-bottom: 50px;
 `

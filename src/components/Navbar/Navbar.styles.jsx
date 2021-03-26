@@ -37,6 +37,7 @@ export const Hamburger = styled.div`
 export const NavLogo = styled.div`
   margin-left: 4rem;
   max-height: 26px;
+  cursor: pointer;
 
   @media screen and (max-width: 900px) {
     navLogo {

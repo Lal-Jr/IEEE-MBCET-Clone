@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
 export const AboutRow = styled.div`
     display: flex;
     flex-direction: row;
-    align-content: space-evenly;
+    align-items: space-evenly;
     justify-content: start;
 `
 
@@ -19,7 +19,7 @@ export const AboutColumn = styled.div`
 
 export const Title = styled.h1`
     text-align: center;
-    padding: 100px 0px 20px 0px;
+    padding: 50px 0px 20px 0px;
     font-size: 36px;
     color: #283d50;
     font-weight: 500;
@@ -29,7 +29,7 @@ export const SubText = styled.p`
     padding: 0px 75px 10px 75px;
     line-height: 1.6;
     justify-content: center;
-    align-content: start;
+    align-items: start;
 `
 export const IconWrapper = styled.div`
     margin: 7px 0px 0px 5px;
@@ -40,7 +40,7 @@ export const IconWrapper = styled.div`
     background: #fff;
     border: 2px solid #007bff;
     color: #007bff;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: center;
     
 
@@ -52,12 +52,12 @@ export const IconWrapper = styled.div`
     }
 `
 export const IconTitle = styled.h4`
-    align-content: flex-end;
+    align-items: flex-end;
     color: #283d50;
     margin-left: 15px;
 `
 export const IconSubtitle = styled.p`
-    align-content: flex-end;
+    align-items: flex-end;
     line-height: 24px;
     font-size: 14px;
     margin-left: 15px;
@@ -66,7 +66,7 @@ export const IconSubtitle = styled.p`
 `
 export const ImageWrapper = styled.image`
     justify-content: start;
-    align-content: center;
+    align-items: center;
     padding-left: 50px;
 `
 

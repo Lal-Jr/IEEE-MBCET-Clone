@@ -5,6 +5,8 @@ import HeroSection from '../../components/HeroSection';
 import AboutSection from '../../components/AboutSection';
 import VMSection from '../../components/VMSection';
 import JoinSection from '../../components/JoinSection';
+import TeamSection from '../../components/TeamSection';
+import SocietySection from '../../components/SocietySection';
 import Footer from '../../components/Footer';
 
 const Home = () => {
@@ -22,6 +24,8 @@ const Home = () => {
             <AboutSection />
             <VMSection />
             <JoinSection />
+            <TeamSection />
+            <SocietySection />
             <Footer />
         </>
     )
