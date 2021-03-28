@@ -1,8 +1,5 @@
 import React from 'react';
-import './Footer.css';
-// import { Button } from '../Button/Button.styles';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import { FooterContainer, FooterRow, FooterLinkWrapper, FooterLinkItems, SocialMediaWrapper, FooterLogo, SocialIcons, SocialIconsLink, Home, About, Team, Gallery, Events, FooterTitle, FooterSubText } from './Footer.styles.jsx';
 import {
     FaFacebook,
     FaInstagram,
@@ -13,88 +10,72 @@ import logo from "../../images/mbcet.png"
 
 function Footer() {
     return (
-        <div className='footer-container'>
-            {/* <section className='footer-subscription'>
-                <p className='footer-subscription-heading'>
-                    Join our exclusive membership to receive the latest news and trends
-                </p>
-                <p className='footer-subscription-text'>
-                    You can unsubscribe at any time.
-                </p>
-                <div className='input-areas'>
-                    <form>
-                        <input
-                            className='footer-input'
-                            name='email'
-                            type='email'
-                            placeholder='Your Email'
-                        />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
-                </div>
-            </section> */}
-            <div className='footer-links'>
-                <div className='footer-link-wrapper'>
-                    <div className='footer-link-items'>
-                        <h2>Useful Link</h2>
-                        <LinkR to='/'>Home</LinkR>
-                        <LinkS to='/'>About Us</LinkS>
-                        <LinkS to='/'>Events</LinkS>
-                        <LinkS to='/'>Gallery</LinkS>
-                        <LinkS to='/'>Team</LinkS>
-                    </div>
-                    <div className='contact'>
-                        <h2>Contact Us</h2>
+        <FooterContainer>
+            <FooterRow>
+                <FooterLinkWrapper>
+                    <h2>Useful Link</h2>
+                </FooterLinkWrapper>
+                <FooterLinkWrapper>
+                    <FooterLinkItems>
+                        <Home to='/'>Home</Home>
+                        <About to='/'>About Us</About>
+                        <Events to='/'>Events</Events>
+                        <Gallery to='/'>Gallery</Gallery>
+                        <Team to='/'>Team</Team>
+                    </FooterLinkItems>
+                </FooterLinkWrapper>
+            </FooterRow>
+            <FooterRow>
+                <FooterLinkWrapper>
+                    <h2>Contact Us</h2>
+                </FooterLinkWrapper>
+                <FooterLinkWrapper>
+                    <FooterLinkItems>
                         <p>MBCET</p>
                         <p>Nalanchira PO, 695015</p>
                         <p>Trivandrum, Kerala, India</p>
-                        <p>Phone: +91 8086010528 (Chair Person)</p>
-                        <p>Email: ieeesb@mbcet.ac.in</p>
-                    </div>
-                </div>
-            </div>
-            <section className='social-media'>
-                <div className='social-media-wrap'>
-                    <div className='footer-logo'>
-                        <a href='https://mbcet.ac.in/' target='_blank' rel="noreferrer" className='social-logo'>
+                        <p><strong>Phone:</strong> +91 8086010528 (Chair Person)</p>
+                        <p><strong>Email:</strong> ieeesb@mbcet.ac.in</p>
+                    </FooterLinkItems>
+                </FooterLinkWrapper>
+            </FooterRow>
+            <FooterRow>
+                <FooterLinkItems>
+                    <FooterTitle>IEEE MBCET</FooterTitle>
+                    <FooterSubText>IEEE is the world's largest technical professional organization dedicated to</FooterSubText>
+                    <FooterSubText>advancing technology for the benefit of humanity.</FooterSubText>
+                    <FooterLogo>
+                        <a href='https://mbcet.ac.in/' target='_blank' rel="noreferrer">
                             <img src={logo} alt="Logo" />
                         </a>
-                    </div>
-                    <small className='website-rights'>MBCET©2021</small>
-                    <div className='social-icons'>
-                        <LinkR
-                            className='social-icon-link1'
-                            to='/'
-                            target='_blank'
-                            aria-label='Facebook'
-                        >
-                            <FaFacebook />
-                        </LinkR>
-                        <LinkR
-                            className='social-icon-link2'
-                            to='/'
-                            aria-label='Instagram'
-                        >
-                            <FaInstagram />
-                        </LinkR>
-                        <LinkR
-                            className='social-icon-link3'
-                            to='/'
-                            aria-label='Twitter'
-                        >
-                            <FaTwitter />
-                        </LinkR>
-                        <LinkR
-                            className='social-icon-link4'
-                            to='/'
-                            aria-label='LinkedIn'
-                        >
-                            <FaLinkedin />
-                        </LinkR>
-                    </div>
-                </div>
-            </section>
-        </div>
+                    </FooterLogo>
+                    <SocialMediaWrapper>
+                        <SocialIcons>
+                            <SocialIconsLink>
+                                <a href='https://www.facebook.com/ieee.mbcet/' target='_blank' rel="noreferrer">
+                                    <FaFacebook />
+                                </a>
+                            </SocialIconsLink>
+                            <SocialIconsLink>
+                                <a href='https://www.instagram.com/ieeesbmbcet/' target='_blank' rel="noreferrer">
+                                    <FaInstagram />
+                                </a>
+                            </SocialIconsLink>
+                            <SocialIconsLink>
+                                <a href='https://www.instagram.com/ieeesbmbcet/' target='_blank' rel="noreferrer">
+                                    <FaTwitter />
+                                </a>
+                            </SocialIconsLink>
+                            <SocialIconsLink>
+                                <a href='https://www.linkedin.com/company/ieee-sb-mbcet/' target='_blank' rel="noreferrer">
+                                    <FaLinkedin />
+                                </a>
+                            </SocialIconsLink>
+                        </SocialIcons>
+                    </SocialMediaWrapper>
+                </FooterLinkItems>
+            </FooterRow>
+        </FooterContainer>
     );
 }
 

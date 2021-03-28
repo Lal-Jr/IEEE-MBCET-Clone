@@ -53,10 +53,7 @@ export const CardTitle = styled(Link)`
     margin: 40px 8px 0px 8px;
     cursor: pointer;
     text-decoration: none;
-
-    &:visited
-        color: #000;
-    }
+    border-top: 2px solid #000;
 
     &:hover{
         color: #429dff;
