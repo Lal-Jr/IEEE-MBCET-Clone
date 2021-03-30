@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ieee-mbcet/static/css/main.0ae85fe7.chunk.css",
+    "main.js": "/ieee-mbcet/static/js/main.d0722163.chunk.js",
+    "main.js.map": "/ieee-mbcet/static/js/main.d0722163.chunk.js.map",
+    "runtime-main.js": "/ieee-mbcet/static/js/runtime-main.96a5be24.js",
+    "runtime-main.js.map": "/ieee-mbcet/static/js/runtime-main.96a5be24.js.map",
+    "static/js/2.babf125a.chunk.js": "/ieee-mbcet/static/js/2.babf125a.chunk.js",
+    "static/js/2.babf125a.chunk.js.map": "/ieee-mbcet/static/js/2.babf125a.chunk.js.map",
+    "index.html": "/ieee-mbcet/index.html",
+    "static/css/main.0ae85fe7.chunk.css.map": "/ieee-mbcet/static/css/main.0ae85fe7.chunk.css.map",
+    "static/js/2.babf125a.chunk.js.LICENSE.txt": "/ieee-mbcet/static/js/2.babf125a.chunk.js.LICENSE.txt",
+    "static/media/Bursar.996e7bc6.jpg": "/ieee-mbcet/static/media/Bursar.996e7bc6.jpg",
+    "static/media/Jayashree_EMBSChair.c76b7cea.jpg": "/ieee-mbcet/static/media/Jayashree_EMBSChair.c76b7cea.jpg",
+    "static/media/Jinu_BranchCouncelor.c5d6ebcd.jpg": "/ieee-mbcet/static/media/Jinu_BranchCouncelor.c5d6ebcd.jpg",
+    "static/media/Kesia_Chair.3b0f1b4d.jpg": "/ieee-mbcet/static/media/Kesia_Chair.3b0f1b4d.jpg",
+    "static/media/Principal.6c229d8a.jpg": "/ieee-mbcet/static/media/Principal.6c229d8a.jpg",
+    "static/media/Vice_Principal.50b335f8.jpg": "/ieee-mbcet/static/media/Vice_Principal.50b335f8.jpg",
+    "static/media/blog1.98ada0ee.jpeg": "/ieee-mbcet/static/media/blog1.98ada0ee.jpeg",
+    "static/media/hero_intro.9d5c2d2d.png": "/ieee-mbcet/static/media/hero_intro.9d5c2d2d.png",
+    "static/media/ieeembcet.d5bbb9e8.png": "/ieee-mbcet/static/media/ieeembcet.d5bbb9e8.png",
+    "static/media/intro-bg.824f8dde.png": "/ieee-mbcet/static/media/intro-bg.824f8dde.png",
+    "static/media/mbcet.50fa21b6.png": "/ieee-mbcet/static/media/mbcet.50fa21b6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96a5be24.js",
+    "static/js/2.babf125a.chunk.js",
+    "static/css/main.0ae85fe7.chunk.css",
+    "static/js/main.d0722163.chunk.js"
+  ]
+}
