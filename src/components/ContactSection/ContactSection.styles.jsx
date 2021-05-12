@@ -1,92 +1,92 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-    background: #fff;
-    padding-bottom: 40px;
-`
+	height: 100vh;
+	background: #ecf5ff;
+	overflow: hidden;
+`;
 
-export const Title = styled.div`
-    text-align: center;
-    padding: 50px 0px 20px 0px;
-    font-size: 36px;
-    color: #2f4456;
-    font-weight: 500;
-`
+export const Title = styled.h1`
+	text-align: center;
+	padding: 100px 0px 20px 0px;
+	font-size: 40px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 48px;
+	padding-bottom: 48px;
+`;
+export const Content = styled.div`
+	margin: 0px 150px 300px;
+	padding: 0px 50px;
+	line-height: 1.6;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+`;
 
-export const ContentWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-`
+export const Form = styled.form`
+	margin: 0px 500px;
+`;
 
-export const ContactCol = styled.div`
-`
+export const FormField = styled.div.attrs({
+	className: "input-text js-input",
+})`
+	position: relative;
+	margin: 32px 0;
+`;
 
-export const WrapperGrid = styled.div``
+export const Label = styled.label.attrs({
+	className: "label",
+})`
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+    cursor: text;
+    transform .2s ease -in -out;
+`;
 
-export const FormContainer = styled.div`
-`
+export const Button = styled.button.attrs({
+	className: "submit",
+	type: "submit",
+	value: "Submit",
+})`
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+`;
 
-export const ContactText = styled.div`
-    margin-left: 20px;
-`
+export const Input = styled.input.attrs({
+	className: "input-text js-input",
+})`
+	display: block;
+	width: 100%;
+	height: 46px;
+	border-width: 0 0 2px 0;
+	border-color: #fff;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 400;
+	background: transparent;
+	color: #fff;
 
-export const Form = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-`
-
-export const Label = styled.div`
-    display: block;
-`
-
-export const Input = styled.div`
-    border: 1px solid #667785;
-    padding: 1em;
-    width: 100%;
-`
-
-export const Textarea = styled.div`
-    border: 1px solid #667785;
-    padding: 1em;
-    width: 100%;
-`
-
-export const Divider = styled.div`
-    width: 80px;
-    height:auto;
-    display:inline-block;
-`
-
-export const TextWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    color: #2f4456;
-`
-
-export const Button = styled.div`
-    border-radius: 50px;
-    background: #00458f;
-    white-space: nowrap;
-    padding: 12px 30px;
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    border: 2px solid #00458f;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    font-weight: bold;
-
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #3385ff;
-        color: #fff;
-        border: 2px solid #3385ff;
-
-    }
-`
+	&:focus {
+		outline: none;
+		+ ${Label} {
+			transform: translateY(-24px);
+		}
+	}
+`;
