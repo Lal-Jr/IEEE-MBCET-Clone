@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ieee-mbcet/static/css/main.0ae85fe7.chunk.css",
-    "main.js": "/ieee-mbcet/static/js/main.a37a506d.chunk.js",
-    "main.js.map": "/ieee-mbcet/static/js/main.a37a506d.chunk.js.map",
+    "main.js": "/ieee-mbcet/static/js/main.690d8c1c.chunk.js",
+    "main.js.map": "/ieee-mbcet/static/js/main.690d8c1c.chunk.js.map",
     "runtime-main.js": "/ieee-mbcet/static/js/runtime-main.96a5be24.js",
     "runtime-main.js.map": "/ieee-mbcet/static/js/runtime-main.96a5be24.js.map",
-    "static/js/2.babf125a.chunk.js": "/ieee-mbcet/static/js/2.babf125a.chunk.js",
-    "static/js/2.babf125a.chunk.js.map": "/ieee-mbcet/static/js/2.babf125a.chunk.js.map",
+    "static/js/2.8389e35c.chunk.js": "/ieee-mbcet/static/js/2.8389e35c.chunk.js",
+    "static/js/2.8389e35c.chunk.js.map": "/ieee-mbcet/static/js/2.8389e35c.chunk.js.map",
     "index.html": "/ieee-mbcet/index.html",
     "static/css/main.0ae85fe7.chunk.css.map": "/ieee-mbcet/static/css/main.0ae85fe7.chunk.css.map",
-    "static/js/2.babf125a.chunk.js.LICENSE.txt": "/ieee-mbcet/static/js/2.babf125a.chunk.js.LICENSE.txt",
+    "static/js/2.8389e35c.chunk.js.LICENSE.txt": "/ieee-mbcet/static/js/2.8389e35c.chunk.js.LICENSE.txt",
     "static/media/Bursar.996e7bc6.jpg": "/ieee-mbcet/static/media/Bursar.996e7bc6.jpg",
     "static/media/Jayashree_EMBSChair.c76b7cea.jpg": "/ieee-mbcet/static/media/Jayashree_EMBSChair.c76b7cea.jpg",
     "static/media/Jinu_BranchCouncelor.c5d6ebcd.jpg": "/ieee-mbcet/static/media/Jinu_BranchCouncelor.c5d6ebcd.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.96a5be24.js",
-    "static/js/2.babf125a.chunk.js",
+    "static/js/2.8389e35c.chunk.js",
     "static/css/main.0ae85fe7.chunk.css",
-    "static/js/main.a37a506d.chunk.js"
+    "static/js/main.690d8c1c.chunk.js"
   ]
 }
